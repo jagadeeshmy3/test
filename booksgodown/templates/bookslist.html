@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor = 'cyan'>
+{%if book_list %}
+<P>BOOKNAME QUANTITY</P>
+    {%for b in book_list%}
+        {{b.name}}
+        {{b.qty}}<br>
+    {% endfor %}
+
+{%else%}
+<p>NO BOKKS IN GODOWN</p>
+{% endif %}
+</body>
+</html>
